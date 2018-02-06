@@ -59,4 +59,9 @@ public class MainApplication extends NavigationApplication implements ReactAppli
   public List<ReactPackage> createAdditionalReactPackages() {
     return getPackages();
   }
+
+  @Override
+  public String getJSMainModuleName() {
+    return "index";
+  }
 }
